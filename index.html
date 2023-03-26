@@ -13,6 +13,23 @@
         document.body.appendChild(zi)
         });
         </script>
+	  <script>
+		  window._zi = {callbacks: {
+onReady: function(data) {
+console.log("onReady param:");
+console.log(data);
+},
+onRequestSent: function(email) {
+console.log("onRequestSent param:");
+console.log(email);
+},onMatch: function(data) {
+console.log("onMatch this:");
+console.log(this);
+console.log("onMatch param:");
+console.log(data);
+}
+}
+	  </script>
     <title>Contact Form</title>
     <style>
       /* Basic form styling */
