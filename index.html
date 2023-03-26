@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form</title>
+    <style>
+      /* Basic form styling */
+      form {
+        max-width: 500px;
+        margin: 33px auto;
+        padding: 77px;
+        border: 1px solid #ccc;
+        border-radius: 17px;
+        box-shadow: 20px 31px 33px #ccc;
+        background-color: rgb(177, 43, 173);
+        color: #2b086b;
+      }
+
+      fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 5px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+      }
+
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0062cc;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Styling for specific fields */
+      .checkbox-group {
+        margin-bottom: 10px;
+      }
+
+      .checkbox-group label {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      /* Styling for error messages */
+      .error {
+        color: red;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required />
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required />
+
+        <label for="phone-number">Phone Number</label>
+        <input type="text" id="phone-number" name="phone-number" required />
+
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" required />
+
+        <label for="company-name">Company Name</label>
+        <input type="text" id="company-name" name="company-name" required />
+
+        <div class="checkbox-group">
+          <label>Is the user in California?</label>
+          <input type="checkbox" id="is-california" name="is-california" />
+        </div>
+
+        <div class="checkbox-group">
+          <label>Is the user in the EU?</label>
+          <input type="checkbox" id="is-eu" name="is-eu" />
+        </div>
+
+        <label for="looks-like-canada"
+          >Does the email address look like it's from Canada?</label
+        >
+        <input
+          type="checkbox"
+          id="looks-like-canada
+		"
+          name="looks-like-canada"
+        />
+
+        <label for="looks-like-eu"
+          >Does the email address look like it's from the EU?</label
+        >
+        <input type="checkbox" id="looks-like-eu" name="looks-like-eu" />
+
+        <label for="free-email"
+          >Is the email address a free email provider?</label
+        >
+        <input type="checkbox" id="free-email" name="free-email" />
+
+        <label for="generic-email"
+          >Is the email address a generic email address?</label
+        >
+        <input type="checkbox" id="generic-email" name="generic-email" />
+
+        <label for="malformed-email">Is the email address malformed?</label>
+        <input type="text" id="malformed-email" name="malformed-email" />
+
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
