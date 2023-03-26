@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-	  <script>
-        window.ZIProjectKey = "0281657f921669107410"; 
-        var zi = document.createElement('script');
-        (zi.type = 'text/javascript'),
+    <script>
+      window.ZIProjectKey = "0281657f921669107410";
+      var zi = document.createElement("script");
+      (zi.type = "text/javascript"),
         (zi.async = true),
-        (zi.src = 'https://js.zi-scripts.com/zi-tag.js'),
-        document.readyState === 'complete'?
-        document.body.appendChild(zi):
-        window.addEventListener('load', function(){
-        document.body.appendChild(zi)
-        });
-        </script>
-	  <script>
-		  window._zi = {callbacks: {
-onReady: function(data) {
-console.log("onReady param:");
-console.log(data);
-},
-onRequestSent: function(email) {
-console.log("onRequestSent param:");
-console.log(email);
-},onMatch: function(data) {
-console.log("onMatch this:");
-console.log(this);
-console.log("onMatch param:");
-console.log(data);
-}
-}
-	  </script>
+        (zi.src = "https://js.zi-scripts.com/zi-tag.js"),
+        document.readyState === "complete"
+          ? document.body.appendChild(zi)
+          : window.addEventListener("load", function () {
+              document.body.appendChild(zi);
+            });
+    </script>
+    <script>
+      window._zi = {
+        callbacks: {
+          onReady: function (data) {
+            console.log("onReady param:");
+            console.log(data);
+          },
+          onRequestSent: function (email) {
+            console.log("onRequestSent param:");
+            console.log(email);
+          },
+          onMatch: function (data) {
+            console.log("onMatch this:");
+            console.log(this);
+            console.log("onMatch param:");
+            console.log(data);
+          },
+        },
+      };
+    </script>
     <title>Contact Form</title>
     <style>
       /* Basic form styling */
@@ -104,7 +107,7 @@ console.log(data);
     </style>
   </head>
   <body>
-    <form id=123>
+    <form id="123">
       <fieldset>
         <label for="first-name">First Name</label>
         <input type="text" id="first-name" name="first-name" required />
